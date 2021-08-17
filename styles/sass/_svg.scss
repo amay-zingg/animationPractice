@@ -1,0 +1,95 @@
+// * * * * GLOBAL
+.adSize {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+.posAb {
+  position: absolute;
+}
+.topLef {
+  left: 0px;
+  top: 0px;
+}
+.topR {
+  right: 0px;
+  top: 0px;
+}
+.bttmLef {
+  left: 0px;
+  bottom: 0px;
+}
+.bgDef {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.viewport {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  opacity: 1;
+}
+
+// * * * * MOON PHASES
+.moon {
+  opacity: 0;
+}
+
+#GL-bg {
+  background: rgb(193, 249, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(193, 249, 255, 1) 0%,
+    rgba(163, 222, 221, 1) 7%,
+    rgba(70, 125, 215, 1) 15%,
+    rgba(85, 52, 252, 1) 20%,
+    rgba(69, 33, 128, 1) 40%,
+    rgba(0, 0, 0, 1) 60%
+  );
+}
+
+#GL-fg {
+  background: url(/assets/treeline.png);
+  background-repeat: no-repeat;
+}
+
+// * * * * MOONS
+#F1-moon-full {
+  background: url(/assets/fullMoon2.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+// Half
+#F1-moon-half-left {
+  background: url(/assets/moonHalfLeft.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#F1-moon-half-right {
+  background: url(/assets/moonHalfRight.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+// Crescent
+#F1-moon-crescent-left {
+  background: url(/assets/moonCrescentLeft.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#F1-moon-crescent-right {
+  background: url(/assets/moonCrescentRight.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}

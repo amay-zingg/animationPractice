@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Playground</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Kreon&display=swap" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <!-- <div class="section-content">
+            <div class="left">
+            <p>Put content here</p>
+            </div>
+     ≈       <div class="right">
+            <h1>Title</h1>
+            </div>
+        </div> -->
+
+        <div class="section-content">
+            <div class="left">
+            <div id="moonContainer" class="viewport adSize">
+                <!-- * * * * BG * * * * -->
+                <div id="GL-bg" class="GL-bg adSize posAb topLef bgDef"></div>
+            
+                <!-- * * * * MOONS * * * * -->
+                <!-- Crescent -->
+                <div id="F1-moon-crescent-left" class="moon adSize posAb topLef bgDef"></div>
+            
+                <div id="F1-moon-crescent-right" class="moon adSize posAb topLef bgDef"></div>
+            
+                <!-- Half -->
+                <div id="F1-moon-half-left" class="moon adSize posAb topLef bgDef"></div>
+            
+                <div id="F1-moon-half-right" class="moon adSize posAb topLef bgDef"></div>
+            
+                <!-- Full Moon -->
+                <div id="F1-moon-full" class="moon adSize posAb topLef bgDef"></div>
+            
+                <!-- * * * * Foreground * * * * -->
+                <div id="GL-fg" class="GL-fg adSize posAb topLef bgDef"></div>
+            
+                <!-- * * * * Border * * * * -->
+                <div id="border" class="adSize posAb topLef"></div>
+            </div>
+            </div>
+            <div class="right">
+                <h1>Moon Phases</h1>
+            </div>
+        </div>
+
+      </main>
+    </div>
+
+    <footer>
+      <p><a href="https://www.anastasiamay.com">Anastasia May</a> 2021</p>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- GSAP -->
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+    <script src="scripts/MorphSVGPlugin.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="scripts/script.js"></script>
+  
+    
+  </body>
+</html>
