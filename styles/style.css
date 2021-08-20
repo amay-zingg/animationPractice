@@ -576,12 +576,12 @@ ul li {
 }
 
 #GL-fg {
-  background: url(../assets/treeline.png);
+  background: url(./../assets/treeline.png);
   background-repeat: no-repeat;
 }
 
 #F1-moon-full {
-  background: url(./assets/fullMoon2.svg);
+  background: url(./../assets/fullMoon2.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -595,21 +595,21 @@ ul li {
 }
 
 #F1-moon-half-right {
-  background: url(/assets/moonHalfRight.svg);
+  background: url(./../assets/moonHalfRight.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 }
 
 #F1-moon-crescent-left {
-  background: url(/assets/moonCrescentLeft.svg);
+  background: url(./../assets/moonCrescentLeft.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 }
 
 #F1-moon-crescent-right {
-  background: url(/assets/moonCrescentRight.svg);
+  background: url(./../assets/moonCrescentRight.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
