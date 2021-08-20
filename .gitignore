@@ -1,0 +1,14 @@
+/.vscode
+/assets/.DS_store
+
+mySnippets.txt
+
+# Ignore Mac System Files
+.DS_store
+thumbs.db
+
+# dependencies
+/node_modules
+
+# https://devconnected.com/how-to-clear-git-cache/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
