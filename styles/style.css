@@ -576,19 +576,19 @@ ul li {
 }
 
 #GL-fg {
-  background: url(/assets/treeline.png);
+  background: url(../assets/treeline.png);
   background-repeat: no-repeat;
 }
 
 #F1-moon-full {
-  background: url(/assets/fullMoon2.svg);
+  background: url(./assets/fullMoon2.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 }
 
 #F1-moon-half-left {
-  background: url(/assets/moonHalfLeft.svg);
+  background: url(./../assets/moonHalfLeft.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
