@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP Playground</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Kreon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background: black">
+    <!-- <div class="wrapper">
+      <main>
+        <div class="fullPage"></div>
+      </main>
+    </div> -->
+
+    <!-- GSAP -->
+    <!-- Latest Version Aug 12 2021 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <script>
+      "use strict";
+      for (let i = 1; i < 23; i++) {
+        document.body.innerHTML +=
+          '<div class="codeStagger"><img src="/assets/images/' +
+          i +
+          '.png"></div>';
+      }
+      let skip = 1,
+        increment = 2;
+      let angleY = 0,
+        angleZ = 0;
+      window.addEventListener(
+        "mousemove",
+        function (e) {
+          if (skip % 5 == 0) {
+            if (angleY < -89) {
+              if (angleY % 90 == 0) {
+                increment = increment * -1;
+              }
+            }
+            gsap.to(".codeStagger", {
+              duration: 2,
+              rotateY: angleY,
+              rotateZ: -angleZ,
+              stagger: 0.1,
+            });
+            skip += 1;
+            angleY = angleY - 5 * Math.abs(increment);
+            angleZ = angleZ + increment;
+          }
+          console.log("angleY=", angleY, "angleZ=", angleZ);
+          skip += 1;
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
