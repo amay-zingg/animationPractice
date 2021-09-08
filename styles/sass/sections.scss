@@ -1,12 +1,12 @@
 /* * * * GLOBAL * * * */
-.viewport {
-  background-color: $primary;
-  border-radius: 5px;
-  width: 100%;
-  min-height: 300px;
-  padding: 15px;
-  overflow: hidden;
-}
+// .viewport {
+//   background-color: $primary;
+//   border-radius: 5px;
+//   width: 100%;
+//   min-height: 300px;
+//   padding: 15px;
+//   overflow: hidden;
+// }
 
 .code-block {
   background-color: $accent;
@@ -27,41 +27,4 @@
 
 .codeStagger {
   position: absolute;
-}
-
-/* * * * TIMELINE - MOTION PATH * * * */
-button {
-  color: $third;
-  background-color: $primary;
-  border-radius: 3px;
-  border: 0;
-  cursor: pointer;
-  font-weight: bold;
-  line-height: 1;
-  padding: 9px 12px;
-  top: 100;
-}
-
-button:hover {
-  color: $accent;
-}
-
-.button-container {
-  margin: 15px;
-}
-
-/* * * * TWEEN 2 * * * */
-.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: $third;
-  text-align: center;
-  @include flexbox(
-    $placeItems: center,
-    $placeContent: center,
-    $direction: column,
-    $wrap: wrap
-  );
-  margin: 5px;
 }
