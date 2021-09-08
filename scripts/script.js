@@ -80,6 +80,20 @@ document.addEventListener("click", function (e) {
 function moonPhase() {
   gsap.set([".moon"], { scale: 0.2, y: -70, autoAlpha: 0 });
 
+  gsap.set(["#GL-fg"], {
+    scale: 1.2,
+    y: -30,
+    x: 50
+  });
+
+
+  gsap.to(["#GL-fg"], {
+    scale: 1.5,
+    duration: 4,
+    y: -80,
+    x: 50
+  });
+
   gsap.to(
     [
       "#F1-moon-full",

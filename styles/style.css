@@ -527,8 +527,8 @@ ul li {
 }
 
 .adSize {
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -578,6 +578,7 @@ ul li {
 #GL-fg {
   background: url(./../assets/treeline.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #F1-moon-full {
@@ -616,15 +617,6 @@ ul li {
 }
 
 /* * * * GLOBAL * * * */
-.viewport {
-  background-color: maroon;
-  border-radius: 5px;
-  width: 100%;
-  min-height: 300px;
-  padding: 15px;
-  overflow: hidden;
-}
-
 .code-block {
   background-color: aquamarine;
   padding: 15px;
@@ -644,51 +636,4 @@ ul li {
 
 .codeStagger {
   position: absolute;
-}
-
-/* * * * TIMELINE - MOTION PATH * * * */
-button {
-  color: moccasin;
-  background-color: maroon;
-  border-radius: 3px;
-  border: 0;
-  cursor: pointer;
-  font-weight: bold;
-  line-height: 1;
-  padding: 9px 12px;
-  top: 100;
-}
-
-button:hover {
-  color: aquamarine;
-}
-
-.button-container {
-  margin: 15px;
-}
-
-/* * * * TWEEN 2 * * * */
-.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: moccasin;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  place-content: center;
-  place-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  margin: 5px;
 }
