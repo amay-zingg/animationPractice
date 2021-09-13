@@ -28,3 +28,24 @@
 .codeStagger {
   position: absolute;
 }
+
+/* * * * TIMELINE - MOTION PATH * * * */
+button {
+  color: $third;
+  background-color: $primary;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  padding: 9px 12px;
+  top: 100;
+}
+
+button:hover {
+  color: $accent;
+}
+
+.button-container {
+  margin: 15px;
+}
