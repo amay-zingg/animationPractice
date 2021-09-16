@@ -75,6 +75,38 @@ document.addEventListener("click", function (e) {
   });
 });
 
+// * * * * TIMELINE - MOTION PATH
+// https://greensock.com/docs/v3/Plugins/MotionPathPlugin
+gsap.registerPlugin(MotionPathPlugin);
+
+let timeline = gsap
+  .timeline({
+    repeat: 2,
+    repeatDelay: 5,
+    defaults: { duration: 12, ease: "power1.inOut" },
+  })
+
+  .to("#hand", {
+    motionPath: {
+      path: "#path",
+      align: "#path",
+      alignOrigin: [0.28, 0.08],
+    },
+  })
+
+  .to("#path", { strokeDasharray: "4046, " + "0" }, "<");
+// wolf path below
+// .to("#path", { strokeDasharray: "950, " + "0" }, "<");
+//Calculating path length to get the 4046 number
+// console.log(document.getElementById("path").getTotalLength());
+// Alternatively in Illustrator > Window > Document Info > Objects
+
+document.getElementById("pause").onclick = () => timeline.pause();
+document.getElementById("play").onclick = () => timeline.play();
+document.getElementById("reverse").onclick = () => timeline.reverse();
+document.getElementById("seek").onclick = () => timeline.seek(5);
+document.getElementById("restart").onclick = () => timeline.restart();
+
  
 // * * * * MOON PHASES
 function moonPhase() {
